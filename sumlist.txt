@@ -1,0 +1,2 @@
+sumlist([],0):-!.
+sumlist([H|T],R):-sumlist(T,R1),R is R1+H.

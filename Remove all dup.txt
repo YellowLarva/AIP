@@ -1,0 +1,3 @@
+remove_duplicate([],[]). 
+remove_duplicate([H|Y],Result):- member(H,Y),remove_duplicate(Y,Result). 
+remove_duplicate([H|Y],[H|Result]):- remove_duplicate(Y,Result),!.

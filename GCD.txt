@@ -1,0 +1,3 @@
+gcd(0,N2,N2):- !.
+gcd(N1,0,N1):- !.
+gcd(N1,N2,R):- N1<N2, Y is N2-N1,!, gcd(N2,Y,R); Y is N1-N2 ,!, gcd(N2,Y,R).

@@ -1,0 +1,2 @@
+nth_element([],N,[]).
+nth_element([H|T],N,R):-N1 is N-1,N1>0,!,nth_element(T,N1,R);R is H.
